@@ -1,0 +1,115 @@
+snippet 3dtransforms
+  -webkit-perspective: ${1:300};
+     -moz-perspective: $1;
+      -ms-perspective: $1;
+          perspective: $1;
+
+  -webkit-transform: rotateY(${2:180}deg);        -webkit-transform-style: ${3:preserve-3d};
+     -moz-transform: rotateY($2deg);           -moz-transform-style: $3;
+      -ms-transform: rotateY($2deg);            -ms-transform-style: $3;
+          transform: rotateY($2deg);                transform-style: $3;
+
+snippet animation
+  .${1:anim}:hover {
+    -webkit-animation: $1 ${2:5s} ${3:infinite};
+       -moz-animation: $1 $2 $3;
+        -ms-animation: $1 $2 $3;
+         -o-animation: $1 $2 $3;
+  }
+
+
+  @-webkit-keyframes $1 {
+    ${4:0}%   { opacity: ${7:0.0}; }
+    ${5:50}%  { opacity: ${8:0.5}; }
+    ${6:100}% { opacity: ${9:1.0}; }
+  }
+  @-moz-keyframes $1 {
+     $4%   { opacity: $7; }
+    $5%   { opacity: $8; }
+    $6%   { opacity: $9; }
+  }
+  @-ms-keyframes $1 {
+     $4%   { opacity: $7; }
+    $5%   { opacity: $8; }
+    $6%   { opacity: $9; }
+  }
+  @-o-keyframes $1 {
+     $4%   { opacity: $7; }
+    $5%   { opacity: $8; }
+    $6%   { opacity: $9; }
+  }
+
+snippet bgsize
+  -webkit-background-size: ${1:100%} $1;
+          background-size: $1 $1;
+
+snippet boxshadow
+  -webkit-box-shadow: ${1:0}px ${2:0}px ${3:0}px ${4:0}px #${5:ffffff};
+          box-shadow: $1px $2px $3px $4px #$5;
+
+snippet columns
+  -webkit-column-count: ${1:2};  -webkit-column-gap: ${2:15px};
+     -moz-column-count: $1;     -moz-column-gap: $2;
+          column-count: $1;          column-gap: $2;
+
+snippet font
+  @font-face {
+    font-family: '${1:WebFont}';
+    src: url('${2:myfont}.eot?#') format('eot'),
+         url('$2.woff') format('woff'),
+         url('$2.ttf') format('truetype');
+  }
+
+snippet gradient
+  background-color: #${1:444444};
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#$1), to(#${2:999999}));
+  background-image: -webkit-linear-gradient(top, #$1, #$2);
+  background-image:    -moz-linear-gradient(top, #$1, #$2);
+  background-image:     -ms-linear-gradient(top, #$1, #$2);
+  background-image:      -o-linear-gradient(top, #$1, #$2);
+  background-image:         linear-gradient(to bottom, #$1, #$2);
+
+snippet opacity
+  opacity: ${1:0.9};
+  filter: alpha(opacity=${2:90});
+
+snippet rgba
+  background-color: transparent;
+  background-color: rgba(${1:180}, ${2:180}, ${3:144}, ${4:0.6});
+            zoom: 1;
+
+snippet rotate
+  -webkit-transform: rotate(${1:7.5}deg);
+     -moz-transform: rotate($1deg);
+      -ms-transform: rotate($1deg);
+       -o-transform: rotate($1deg);
+          transform: rotate($1deg);
+               zoom: 1;
+
+snippet round
+  -webkit-border-radius: ${1:12px};
+          border-radius: $1;
+
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+snippet scale
+  -webkit-transform: scale(${1:0.8});
+     -moz-transform: scale($1);
+      -ms-transform: scale($1);
+       -o-transform: scale($1);
+          transform: scale($1);
+
+snippet tabsize
+  -moz-tab-size: ${1:2};
+    -o-tab-size: $1;
+       tab-size: $1;
+
+snippet textshadow
+  text-shadow: ${1:0}px ${2:0}px ${3:0}px ${4:0}px #${5:ffffff};
+
+snippet transition
+  -webkit-transition: ${1:all} ${2:0.3s} ${3:ease-out};
+     -moz-transition: $1 $2 $3;
+      -ms-transition: $1 $2 $3;
+       -o-transition: $1 $2 $3;
+          transition: $1 $2 $3;

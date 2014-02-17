@@ -1,3 +1,9 @@
+This is a fork of
+[mklabs/snipmate-css3-please](https://github.com/mklabs/snipmate-css3-please),
+extended for compatibility with
+[Neosnippet.vim](https://github.com/Shougo/neosnippet.vim)
+
+The original `readme.md` follows.
 
 # CSS3 Please snippets for SnipMate
 
