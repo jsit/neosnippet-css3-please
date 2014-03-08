@@ -3,6 +3,12 @@ This is a fork of
 extended for compatibility with
 [Neosnippet.vim](https://github.com/Shougo/neosnippet.vim)
 
+To get it to work with Neosnippet, you probably want to add something like this
+to your `~/.vimrc`:
+
+`let
+g:neosnippet#snippets_directory+="~/.vim/bundle/neosnippet-css3-please/snippets/neosnippet"`
+
 The original `readme.md` follows.
 
 # CSS3 Please snippets for SnipMate
